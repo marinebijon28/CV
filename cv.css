@@ -1,0 +1,40 @@
+* {
+    margin: 0%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    height: 100px;
+    background-color: aqua;
+    flex: 0 0 100%;
+    order: 1;
+}
+
+article {
+    height : 100px;
+    flex: 0 0 70%;
+    order : 2;
+    background-color: aquamarine;
+}
+
+aside {
+    flex: 0 0 30%;
+    height : 100px;
+    order : 3;
+    background-color: beige;
+}
+
+footer {
+    height : 100px;
+    flex: 0 0 100%;
+    order : 4;
+    background-color: white;
+}
+
+p {
+    color: black;
+}
