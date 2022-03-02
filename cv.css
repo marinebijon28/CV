@@ -54,10 +54,15 @@ aside {
 }
 
 footer {
-    height : 100px;
+    height : 65%;
     flex: 0 0 100%;
     order : 4;
-    background-color: white;
+    background-color: rgb(70, 76, 78);
+    color: white;
+    text-align: center;
+}
+footer p {
+    color: antiquewhite;
 }
 
 p {
@@ -112,10 +117,17 @@ p {
     }
     
     footer {
-        height : 100px;
+        height : 55%;
         flex: 0 0 100%;
         order : 4;
-        background-color: white;
+        background-color: rgb(70, 76, 78);
+        color: white;
+        text-align: center;
     }
+    footer p {
+        color: antiquewhite;
+    }
+
+    
     
 }
