@@ -19,6 +19,7 @@ main {
     top: 0;
 }
 
+
 section {
     display: flex;
     flex-wrap: wrap;
@@ -43,6 +44,7 @@ section > header > ul {
     height : 100%;
 }
 
+
 article {
     height : 100%;
     flex: 0 0 60%;
@@ -54,7 +56,7 @@ article {
 aside {
     flex: 0 0 36%;
     /* a changer mettre taille fixe en fonction de larticle */
-    height : 1010px;
+    height : 1310px;
     order : 3;
     background-color: beige;
     color: black;
@@ -65,10 +67,12 @@ aside ul{
     list-style-type: none;
 }
 
-
+aside ul li{
+    margin-top: 3%;
+}
 
 footer {
-    height : 280px;
+    height : 310px;
     width: 100%;
     flex: 0 0 100%;
     order : 4;
@@ -81,6 +85,27 @@ footer {
 
 footer p {
     color: antiquewhite;
+}
+
+progress{
+    background-color: silver;
+    border-radius: 5px;
+    height: 5px;
+}
+
+progress::-webkit-progress-bar{
+    background-color:silver;
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value{
+    background-color:cornflowerblue;
+    border-radius: 5px;
+}
+
+progress::-moz-progress-bar{
+    background-color:cornflowerblue;
+    border-radius: 5px;
 }
 
 p {
@@ -132,7 +157,7 @@ p {
     
     aside {
         flex: 0 0 96%;
-        height : 1010px;
+        height : 1350px;
         order : 2;
         background-color: beige;
         padding: 3% 2% 2% 2%;
