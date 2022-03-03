@@ -6,6 +6,8 @@ main {
   display: flex;
   flex-wrap: wrap;
   background-color: blueviolet;
+  font-family:'PT Sans Narrow', sans-serif;
+        
 }
 
 .header {
@@ -13,7 +15,6 @@ main {
     background-color: rgb(0, 140, 255);
     flex: 0 0 100%;
     text-align: center;
-    font-family:'PT Sans Narrow', sans-serif;
     position: sticky;
     top: 0;
 }
@@ -40,7 +41,6 @@ section > header > ul {
     padding-left: 0%;
     align-items: center;
     height : 100%;
-    font-family:'PT Sans Narrow', sans-serif;
 }
 
 article {
@@ -54,11 +54,11 @@ article {
 aside {
     flex: 0 0 36%;
     /* a changer mettre taille fixe en fonction de larticle */
-    height : 1000px;
+    height : 1010px;
     order : 3;
     background-color: beige;
     color: black;
-    padding: 3% 1% 1% 1%;
+    padding: 1% 1% 1% 1%;
 }
 
 aside ul{
@@ -93,8 +93,7 @@ p {
         background-color: rgb(0, 140, 255);
         flex: 0 0 100%;
         text-align: center;
-        font-family:'PT Sans Narrow', sans-serif;
-        position: sticky;
+       position: sticky;
         top : 0;
     }
     
@@ -133,7 +132,7 @@ p {
     
     aside {
         flex: 0 0 96%;
-        height : 610px;
+        height : 1010px;
         order : 2;
         background-color: beige;
         padding: 3% 2% 2% 2%;
