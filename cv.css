@@ -25,12 +25,12 @@ section {
 }
 
 section > header {
-    height: 50px;
+    height: 2%;
     background-color: rgb(70, 76, 78);
     flex: 0 0 100%;
     order: 1;
     position: sticky;
-    top : 9.8%;
+    top : 14.1%;
 }
 
 section > header > ul {
@@ -106,12 +106,12 @@ p {
     
 
     section > header {
-        height: 40px;
+        height: 2%;
         background-color: rgb(70, 76, 78);
         flex: 0 0 100%;
         order: 1;
         position: sticky;
-        top : 10.6%;
+        top : 14.9%;
     }
     
     article {
