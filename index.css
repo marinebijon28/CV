@@ -166,7 +166,7 @@ p {
     }
     
     article {
-        height: 1400px;
+        height: 1500px;
         flex: 0 0 100%;
         order : 3;
         background-color:rgb(97, 58, 0);
@@ -182,7 +182,7 @@ p {
 
     
     footer {
-        height : 270px;
+        height : 310px;
         flex: 0 0 100%;
         order : 4;
         background-color: rgb(70, 76, 78);
