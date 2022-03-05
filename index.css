@@ -178,7 +178,7 @@ p {
         flex: 0 0 96%;
         height : 1750px;
         order : 2;
-        background-color: beige;
+        background-color: rgb(255, 255, 255);
         padding: 3% 2% 2% 2%;
     }
 
