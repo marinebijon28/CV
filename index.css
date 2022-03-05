@@ -50,13 +50,13 @@ article {
     height : 1800px;
     flex: 0 0 60%;
     order : 2;
-    background-color:rgb(97, 58, 0);
+    background-color:rgb(137, 171, 235);
     padding: 1%;
     color: white;
 }
 
 article > p {
-    color: beige;
+    color: black;
 }
 
 article ul ul li {
@@ -64,7 +64,7 @@ article ul ul li {
 }
 
 .beige {
-    color : beige;
+    color : black;
 }
 
 article ul ul p {
@@ -76,7 +76,7 @@ aside {
     /* a changer mettre taille fixe en fonction de larticle */
     height : 1800px;
     order : 3;
-    background-color: beige;
+    background-color: rgb(255, 255, 255);
     color: black;
     padding: 1% 1% 1% 1%;
 }
@@ -99,6 +99,7 @@ footer {
     text-align: center;
     position: relative; 
     bottom: 0%;
+    min-height: 310px;
 }
 
 footer p {
@@ -170,7 +171,7 @@ p {
         height: 1500px;
         flex: 0 0 100%;
         order : 3;
-        background-color:rgb(97, 58, 0);
+        background-color:rgb(137, 171, 235);
     }
     
     aside {
