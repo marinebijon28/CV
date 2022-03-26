@@ -1,6 +1,6 @@
 #### Composition d'une page HTML
 
-### doctype
+###         doctype
 <!DOCTYPE html>
 En HTML, le doctype est le préambule requis en haut de tous les documents. Son seul but est d’empêcher un navigateur de passer en soi-disant "quirks mode" lors du rendu d’un document ; c’est-à-dire que le doctype garantit que le navigateur fait de son mieux pour suivre les spécifications pertinentes, plutôt que d’utiliser un mode de rendu différent incompatible avec certaines spécifications. 
 
@@ -32,7 +32,7 @@ Sous Internet Explorer, appuyez sur la touche F12 et utilisez le champ Document 
 
 
 
-###    html
+###             html
 <html lang="fr">
 </html>
 L’élément de racine du document HTML représente la racine d’un document HTML ou XHTML. Tout autre élément du document doit être un descendant de cet élément.
@@ -44,7 +44,7 @@ L’élément de racine du document HTML représente la racine d’un document H
 Puisque l’élément html <html> est le premier élément dans un document, autre que les commentaires, il est désigné comme l’élément racine du document. Bien que cette balise soit implicite, ou non requise dans un document HTML, il est requis dans un document XHTML (à la fois pour la balise ouvrante et pour la balise fermante).
 
 # Accessibilité :
-L’utilisation d’un attribut lang valide (au sens de l’IETF = Internet Engineering Task Force) pour l’élément HTML permettra aux lecteurs d’écran de déterminer la langue à utiliser pour l’énonciation. La balise de langage utilisée doit correspondre à celle utilisée pour la majorité du contenu de la page. Sans attribut, les lecteurs d’écran utiliseront la lange paramétrée par le système d’exploitation, ce qui pourra entraîner des défauts de pronociations.
+L’utilisation d’un attribut lang valide (au sens de l’IETF = Internet Engineering Task Force) pour l’élément HTML permettra aux lecteurs d’écran de déterminer la langue à utiliser pour l’énonciation. La balise de langage utilisée doit correspondre à celle utilisée pour la majorité du contenu de la page. Sans attribut, les lecteurs d’écran utiliseront la langue paramétrée par le système d’exploitation, ce qui pourra entraîner des défauts de pronociations.
 
 Ajouter un attribut lang valide au sein de l’élément HTML permet également de s’assurer que les métadonnées importantes contenue dans l’élément <head>, telle que le titre de la page (<title>) sont énoncées correctement.  
 
@@ -56,12 +56,13 @@ Ajouter un attribut lang valide au sein de l’élément HTML permet également 
 </head>
 L’élément HTML <head> fournit des informations générales (métadonnées) sur le document, incluant son titre et des liens ou des définitions vers des scripts et feuilles de style.
 
-Note : L’élément <head> contient principalement des données destinées au traitement automatisé et pas nécessairement lisibles par des humains. Pour afficher des informations lisibles pour les utilisateurs dans des en-têtes ou titre, voir l’élément <header>
+# Note : 
+L’élément <head> contient principalement des données destinées au traitement automatisé et pas nécessairement lisibles par des humains. Pour afficher des informations lisibles pour les utilisateurs dans des en-têtes ou titre, voir l’élément <header>
 
 
 
 
-##  title
+###         title
 <title>Curriculum Vitae de Marine Bijon – Retrouvez mes compétences</title>
 L’élément <title> définit le titre du document (qui est affiché dans la barre de titre du navigateur ou dans l’onglet de la page). Cet élément ne peut contenir que du texte, les balises qu’il contiendrait seraient ignorées.
 
@@ -71,7 +72,6 @@ Le titre d’une page fait partie des éléments principaux qui sont scannés lo
 Aussi, mieux vaudra avoir des titres descriptifs plutôt que des titres trop courts ou vagues.
 
 # Quelques observations :
-
 - On pourra éviter des titres sur un ou deux mots.
 - La longueur affichée pour les titres dans les résultats d’un moteur de recherche se situe entre 55 et 60 caractères. Si le titre est plus long, on veillera à ce que les concepts majeurs apparaissent avant cette longueur.
 - Attention aux entités (les chevrons HTML pourront être affichés différemment entre les navigateurs).
@@ -91,36 +91,34 @@ Mettre à jour la valeur de title afin de refléter un changement d’état impo
 
 
 ##  link
-L'élément HTML <link> définit la relation entre le document courant et une ressource externe. Cet élément peut être utilisé pour définir un lien vers une feuille de style, vers les icônes utilisées en barre de titre ou comme icône d'application sur les appareils mobiles.
+L'élément HTML <link /> définit la relation entre le document courant et une ressource externe. Cet élément peut être utilisé pour définir un lien vers une feuille de style, vers les icônes utilisées en barre de titre ou comme icône d'application sur les appareils mobiles.
 
 Pour lier une feuille de style externe, on inclut un élément <link> de la forme suivante à l'intérieur de l'élément <head> :
 
-<link href="main.css" rel="stylesheet">
+<link href="main.css" rel="stylesheet" />
 Dans cet exemple, on indique le chemin vers la feuille de style grâce à l'attribut href, l'attribut rel possède une valeur stylesheet qui indique que c'est une feuille de style. rel signifie relationship qui correspond donc à la relation entre la ressource et le document courant. Il existe de nombreux types de liens possibles.
 
 Certains types sont assez fréquents. Ainsi, pour l'icône présentant le site dans l'onglet, on trouvera :
 
-<link rel="icon" href="favicon.ico">
+<link rel="icon" href="favicon.ico" />
 Il existe différents types de relations pour préciser les icônes et qui permettent notamment de cibler certaines plateformes mobiles :
 
 <link rel="apple-touch-icon-precomposed" sizes="114x114"
-      href="apple-icon-114.png" type="image/png">
+      href="apple-icon-114.png" type="image/png" />
 L'attribut sizes indique la taille de l'icône tandis que l'attribut type contient le type MIME de la ressource qui est liée. Ces attributs permettent alors au navigateur de sélectionner la ressource la plus adéquate.
 
 On peut également fournir l'attribut media afin d'utiliser telle ou telle ressource lorsqu'une requête média est vérifiée. Ainsi, on pourra utiliser ce qui suit afin d'avoir une feuille de style utilisée à l'impression et une autre dédiée au mobile :
 
-<link href="print.css" rel="stylesheet" media="print">
-<link href="mobile.css" rel="stylesheet" media="screen and (max-width: 600px)">
-Certaines fonctionnalités relatives à la sécurité sont également disponibles avec certains attributs de <link>. Dans cet exemple :
-
+<link href="print.css" rel="stylesheet" media="print" />
+<link href="mobile.css" rel="stylesheet" media="screen and (max-width: 600px)" />
+Certaines fonctionnalités relatives à la sécurité sont également disponibles avec certains attributs de <link />. Dans cet exemple :
 
 # lien extérieur sécurité
 <link rel="preload" href="myFont.woff2" as="font"
-      type="font/woff2" crossorigin="anonymous">
+      type="font/woff2" crossorigin="anonymous" />
 L'attribut rel vaut preload et indique que le navigateur doit précharger la ressource (voir Le préchargement du contenu avec rel="preload" pour plus de détails), l'attribut as indique la classe de contenu qui est récupéré et l'attribut crossorigin indique si la ressource doit être récupérée avec une requête CORS.
 
-Quelques notes d'utilisation :
-
+# Quelques notes d'utilisation :
 - Un élément <link> element peut être placé dans un élément <head> ou <body> selon la valeur de la relation. C'est cependant une bonne pratique que de placer l'ensemble des éléments <link> dans l'élément <head>.
 - Lorsque <link> est utilisé pour la favicon d'un site et que celui-ci utilise les règles CSP afin d'améliorer la sécurité, les règles s'appliquent également aux icônes. Aussi, si la favicon ne charge pas, veuillez vérifier que la directive img-src de l'en-tête Content-Security-Policy ne bloque pas le chargement de l'image.
 - Les spécifications HTML et XHTML définissent des gestionnaires d'évènements pour l'élément <link> mais leur utilisation reste incertaine.
