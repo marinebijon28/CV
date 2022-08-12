@@ -26,8 +26,6 @@
     <meta name="author" content="Marine Bijon" />
     <!-- sets the description for search of site -->
     <meta name="description" content="CV Marine Bijon" />
-    <!-- sets the server behavior of site -->
-    <meta http-equiv="Content-Security-Policy" content="img-src 'self' img.icons8.com ; font-src 'self' fonts.gstatic.com ; default-src 'self'  ;"   />
     <!-- sets the controls the HTTP Referer header  -->
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <!-- sets the color theme of site  -->
@@ -38,9 +36,8 @@
     <meta name="robots" content="index, follow" />
     <!-- sets the color theme of site  -->
     <meta name="googlebot" content="index, follow" />
-    <!-- verify if src use protocol https -->
-
-    <meta http-equiv="Content-Security-Policy" content="default-src https:" />
+    <!-- verify source -->
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' img.icons8.com localhost; font-src 'self' fonts.gstatic.com ; style-src-elem 'self' fonts.googleapis.com ;default-src 'self' ;"   />
     <!-- méta data / -->
 
     <!-- favicon -->
